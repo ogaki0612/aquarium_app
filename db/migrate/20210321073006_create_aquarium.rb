@@ -1,6 +1,6 @@
-class CreateAquaria < ActiveRecord::Migration[6.0]
+class CreateAquarium < ActiveRecord::Migration[6.0]
   def change
-    create_table :aquaria do |t|
+    create_table :aquariums do |t|
 
       t.timestamps
       t.string :title, null: false
