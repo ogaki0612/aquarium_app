@@ -8,12 +8,38 @@ class AquasController < ApplicationController
   end
 
   def create
-    @aqua = Aqua.create(aqua_params)
+    @aqua = Aqua.new(aqua_params)
     if @aqua.save
       redirect_to root_path
     else
       render :new
     end
+  end
+
+  def show
+    @aqua = Aqua.find(params[:id])
+  end
+
+  def edit
+    @aqua = Aqua.find(params[:id])
+    unless current_user.id == @aqua.user_id
+      redirect_to action: :index
+    end
+  end
+
+  def update
+    @aqua = Aqua.find(params[:id])
+    if @aqua.update(aqua_params)
+      redirect_to aqua_path(@aqua.id)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @aqua = Aqua.find(params[:id])
+    @aqua.destroy
+    redirect_to root_path
   end
   
   private
