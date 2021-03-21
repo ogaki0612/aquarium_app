@@ -2,33 +2,25 @@
   <div class="inner">
     <div class="user__wrapper">
       <h2 class="page-heading">
-        <%= "ユーザー名さんの情報"%>
+        <%= "#{@user.nickname}さんの情報"%>
       </h2>
       <table class="table">
         <tbody>
           <tr>
             <th class="table__col1">名前</th>
-            <td class="table__col2"><%= "ユーザー名" %></td>
+            <td class="table__col2"><%= @user.nickname %></td>
           </tr>
           <tr>
             <th class="table__col1">プロフィール</th>
-            <td class="table__col2"><%= "ユーザーのプロフィール" %></td>
-          </tr>
-          <tr>
-            <th class="table__col1">所属</th>
-            <td class="table__col2"><%= "ユーザーの所属" %></td>
-          </tr>
-          <tr>
-            <th class="table__col1">役職</th>
-            <td class="table__col2"><%= "ユーザーの役職" %></td>
+            <td class="table__col2"><%= @user.profile %></td>
           </tr>
         </tbody>
       </table>
       <h2 class="page-heading">
-        <%= "ユーザー名さんのプロトタイプ"%>
+        <%= "#{@user.nickname}さんのアクアリウム一覧"%>
       </h2>
       <div class="user__card">
-        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
+        <%= render partial:"aquas/aqua",collection: @aquas %>
       </div>
     </div>
   </div>

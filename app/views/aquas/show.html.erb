@@ -4,7 +4,7 @@
       <p class="prototype__hedding">
         <%= @aqua.title %>
       </p>
-      <%= link_to "by #{@aqua.user.nickname}", root_path, class: :prototype__user %>
+      <%= link_to "by #{@aqua.user.nickname}", user_path(@aqua.user.id), class: :prototype__user %>
         <% if user_signed_in? && current_user.id ==@aqua.user_id %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_aqua_path(@aqua.id), class: :prototype__btn %>
@@ -39,7 +39,7 @@
             <% @comments.each do |comment| %>
               <li class="comments_list">
                 <%= comment.text %>
-                <%= link_to comment.user.nickname, root_path, class: :comment_user %>
+                <%= link_to comment.user.nickname, user_path(comment.user.id), class: :comment_user %>
               </li>
             <% end %>
           <% end %>

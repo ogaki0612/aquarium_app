@@ -1,10 +1,10 @@
 <div class="card">
   <%= link_to image_tag(aqua.image, class: :card__img ), aqua_path(aqua.id)%>
   <div class="card__body">
-    <%= link_to aqua.title, root_path, class: :card__title%>
+    <%= link_to aqua.title, aqua_path(aqua.id), class: :card__title%>
     <p class="card__summary">
       <%= aqua.details %>
     </p>
-    <%= link_to "by #{aqua.user.nickname}", root_path, class: :card__user %>
+    <%= link_to "by #{aqua.user.nickname}", user_path(aqua.user.id), class: :card__user %>
   </div>
 </div>
