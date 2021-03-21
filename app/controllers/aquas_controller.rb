@@ -1,6 +1,6 @@
 class AquasController < ApplicationController
   def index
-    @aquas = Aqua.all
+    @aquas = Aqua.includes(:user).all
   end
 
   def new
@@ -18,6 +18,8 @@ class AquasController < ApplicationController
 
   def show
     @aqua = Aqua.find(params[:id])
+    @comment = Comment.new
+    @comments = @aqua.comments.includes(:user)
   end
 
   def edit
