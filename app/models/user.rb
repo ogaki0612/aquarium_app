@@ -3,6 +3,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   has_many :aquas
+  has_many :comments
 
   with_options presence: true do
     validates :nickname
