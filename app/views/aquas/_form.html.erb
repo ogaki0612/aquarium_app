@@ -1,4 +1,4 @@
-<%= form_with model: aqua, local: true do |f|%>
+<%= form_with model: aqua, id: 'aquarium', local: true do |f|%>
   <div class="field">
     <%= f.label :title, "タイトル" %><br />
     <%= f.text_field :title, id:"prototype_title" %>
@@ -22,4 +22,5 @@
   <div class="actions">
     <%= f.submit "保存する", class: :form__btn  %>
   </div>
+  <div id="image-list"></div>
 <% end %>
