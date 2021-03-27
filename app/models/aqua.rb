@@ -11,6 +11,7 @@ class Aqua < ApplicationRecord
     validates :image
     validates :title
     validates :details
+    validates :category_id
   end
-  validates :category_id, numericality: { other_than: 0 }
+  
 end

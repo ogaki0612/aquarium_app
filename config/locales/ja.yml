@@ -1,0 +1,11 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       profile: プロフィール
+     aqua:
+       image: 画像
+       title: タイトル
+       details: 詳細
+       category_id: タイプ
