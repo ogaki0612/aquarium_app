@@ -66,3 +66,4 @@ Aquaria
 
 -belongs_to :user
 -belongs_to :aquarium
+
