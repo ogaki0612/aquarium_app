@@ -17,7 +17,8 @@ div {
 
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #3b4043;
+  color: #0f2e41;
+  background-color: white;
 }
 
 li {
@@ -31,13 +32,11 @@ img {
 
 a {
   text-decoration: none;
-  color: #3b4043;
+  color: #0f2e41;
 }
 
-/* ヘッダー */
-
 .header {
-  background-color: #f1f8fe;
+  background-color: #5ea6e6;
   margin-bottom: 48px;
   padding: 20px 0;
 
@@ -58,10 +57,10 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: #0b6aa5;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px  #023f64;
   border-radius: 3px;
   transition: 0.4s ease;
 }
@@ -74,15 +73,23 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: #0b6aa5;
   text-decoration: none;
   user-select: none;
+  border: 1px  #023f64;
+  border-radius: 3px;
+  transition: 0.4s ease;
 }
 .nav__logout:hover{
-  opacity: 0.5;
+  color: #fff;
+  background: #87CEFA;
 }
 
-/* フォーム周り */
+.nav__left{
+  font-size: 28px;
+  font-family: cursive ;
+}
+
 .form__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -118,13 +125,11 @@ a {
   cursor: pointer;
 }
 
-/* メイン */
-
 .greeting{
   margin-bottom: 20px;
 }
 .greeting__link{
-  text-decoration: underline;
+  text-decoration: none;
 }
 .page-heading {
   font-size: 30px;
@@ -158,31 +163,29 @@ a {
   font-size: 12px;
   color: #999;
   text-align: right;
-  text-decoration: underline;
 }
 
 /* 詳細ページ */
-.prototype__wrapper{
+.aqua__wrapper{
   min-height: calc(100vh - 161px);
 }
-.prototype__hedding{
+.aqua__hedding{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-.prototype__user{
+.aqua__user{
   display: block;
   font-size: 16px;
   color: #999;
   text-align: center;
-  text-decoration: underline;
 }
-.prototype__image{
+.aqua__image{
   width: 40%;
   margin: 0 auto;
   padding: 16px 0;
 }
-.prototype__detail{
+.aqua__detail{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -192,12 +195,12 @@ a {
   font-size: 20px;
   font-weight: bold;
 }
-.prototype__manage{
+.aqua__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-.prototype__btn{
+.aqua__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -209,12 +212,12 @@ a {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-.prototype__btn:hover{
+.aqua__btn:hover{
   color: #fff;
   background: #999;
 }
 
-.prototype__comments{
+.aqua__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
@@ -232,10 +235,8 @@ a {
 .comment_user{
   font-size: 16px;
   color: #999;
-  text-decoration: underline;
 }
 
-/* ユーザーページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -266,19 +267,13 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-/* フッター */
 
 .footer {
-  background-color: #999;
+  background-color: #5ea6e6;
   padding: 10px 0;
 }
-.copyright {
-  text-align: center;
-  color: #fff;
-  font-size: 10px;
-}
 
-/* タブレット対応 */
+
 @media (max-width: 1024px) {
   .inner {
     width: 90%;
@@ -291,12 +286,11 @@ a {
     width: 48%;
     margin-bottom: 40px;
   }
-  .prototype_image{
+  .aqua_image{
     width: 60%;
   }
 }
 
- /* スマホ表示 */
 @media (max-width: 599px) {
   .logo {
     width: 120px;
@@ -314,7 +308,7 @@ a {
   .card__summary {
     font-size: 14px;
   }
-  .prototype_image{
+  .aqua_image{
     width: 100%;
   }
   .table{

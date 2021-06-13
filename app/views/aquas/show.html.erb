@@ -1,28 +1,28 @@
 <main class="main">
   <div class="inner">
-    <div class="prototype__wrapper">
-      <p class="prototype__hedding">
+    <div class="aqua__wrapper">
+      <p class="aqua__hedding">
         <%= @aqua.title %>
       </p>
-      <%= link_to "by #{@aqua.user.nickname}", user_path(@aqua.user.id), class: :prototype__user %>
+      <%= link_to "by #{@aqua.user.nickname}", user_path(@aqua.user.id), class: :aqua__user %>
         <% if user_signed_in? && current_user.id ==@aqua.user_id %>
-        <div class="prototype__manage">
-          <%= link_to "編集する", edit_aqua_path(@aqua.id), class: :prototype__btn %>
-          <%= link_to "削除する", aqua_path(@aqua.id), method: :delete, class: :prototype__btn %>
+        <div class="aqua__manage">
+          <%= link_to "編集する", edit_aqua_path(@aqua.id), class: :aqua__btn %>
+          <%= link_to "削除する", aqua_path(@aqua.id), method: :delete, class: :aqua__btn %>
         </div>
       <% end %>
-      <div class="prototype__image">
+      <div class="aqua__image">
         <%= image_tag @aqua.image %>
       </div>
-      <div class="prototype__body">
-        <div class="prototype__detail">
+      <div class="aqua__body">
+        <div class="aqua__detail">
           <p class="detail__title">詳細</p>
           <p class="detail__message">
             <%= @aqua.details %>
           </p>
         </div>
       </div>
-      <div class="prototype__comments">
+      <div class="aqua__comments">
         <% if user_signed_in? %>
           <%= form_with(model: [@aqua,@comment], local: true) do |form| %>
             <div class="field">
