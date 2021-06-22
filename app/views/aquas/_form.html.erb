@@ -2,7 +2,7 @@
 <%= render 'shared/error_messages', model: f.object %>
   <div class="field">
     <%= f.label :title, "タイトル" %><br />
-    <%= f.text_field :title, id:"prototype_title" %>
+    <%= f.text_field :title, id:"aqua_title" %>
   </div>
 
   <div class= "category">
@@ -12,12 +12,12 @@
 
   <div class="field">
     <%= f.label :details, "詳細" %><br />
-    <%= f.text_area :details, class: :form__text, id:"prototype_catch_copy" %>
+    <%= f.text_area :details, class: :form__text, id:"aqua_catch_copy" %>
   </div>
 
   <div class="field">
     <%= f.label :image, "プロトタイプの画像" %><br />
-    <%= f.file_field :image, id:"prototype_image" %>
+    <%= f.file_field :image, id:"aqua_image" %>
   </div>
 
   <div class="actions">
