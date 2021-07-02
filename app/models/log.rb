@@ -7,5 +7,4 @@ class Log < ApplicationRecord
     validates :image
     validates :title
   end
-  
 end
