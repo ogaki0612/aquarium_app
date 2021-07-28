@@ -25,10 +25,10 @@ Aquaria
 
 #### Association
 
--has_many :aquariums
+-has_many :aquas
 -has_many :comments
 
-### aquariumsテーブル
+### aquasテーブル
 
 | column           | type       | option            |
 | ---------------- | ---------- | ----------------- |
@@ -48,11 +48,11 @@ Aquaria
 | column        | type       | option            |
 | ------------- |------------| ------------------|
 | title         | string     | null: false       |
-| aquarium      | references | foreign_key: true |
+| aqua          | references | foreign_key: true |
 
 #### Association
 
--belongs_to :aquarium
+-belongs_to :aqua
 
 ### commentsテーブル
 
@@ -60,10 +60,10 @@ Aquaria
 | ------------- |------------| ------------------|
 | text          | text       | null: false       |
 | user          | references | foreign_key: true |
-| aquarium      | references | foreign_key: true |
+| aqua          | references | foreign_key: true |
 
 #### Association
 
 -belongs_to :user
--belongs_to :aquarium
+-belongs_to :aqua
 
