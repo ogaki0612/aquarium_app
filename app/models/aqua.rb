@@ -4,7 +4,7 @@ class Aqua < ApplicationRecord
   belongs_to :user
   belongs_to :category
   has_many :comments, dependent: :destroy
-  has_many :logs
+  has_many :logs, dependent: :destroy
 
   has_one_attached :image
 

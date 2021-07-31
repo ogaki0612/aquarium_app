@@ -6,7 +6,10 @@ class CommentsController < ApplicationController
       redirect_to aqua_path(@comment.aqua)
     else
       @aqua = @comment.aqua
+      @comment = Comment.new
       @comments = @aqua.comments.includes(:user)
+      @log = Log.new
+      @logs = @aqua.logs
       render "aquas/show"
     end
   end

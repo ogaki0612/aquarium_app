@@ -1,0 +1,16 @@
+<main class="main">
+  <div class="inner">
+    <div class="aqua__wrapper">
+      <p class="aqua__hedding">
+        <%= @log.title %>
+      </p>
+        <div class="aqua__manage">
+          <%= link_to "戻る", aqua_path(@aqua.id), class: :aqua__btn %>
+          <%= link_to "削除する", aqua_log_path(@log.id), method: :delete, class: :aqua__btn %>
+        </div>
+      <div class="aqua__image">
+        <%= image_tag @log.image %>
+      </div>
+    </div>
+  </div>
+</main>

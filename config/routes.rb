@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to:"aquas#index"
   resources :aquas do
     resources :comments, only: [ :create ]
+    resources :logs
   end
   resources :users, only: [:show]
+
 end

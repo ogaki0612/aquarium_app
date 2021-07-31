@@ -17,8 +17,8 @@ div {
 
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #0f2e41;
-  background-color: white;
+  color: white;
+  background-color: black;
 }
 
 li {
@@ -32,11 +32,11 @@ img {
 
 a {
   text-decoration: none;
-  color: #0f2e41;
+  color: #eef8f1;
 }
 
 .header {
-  background-color: #5ea6e6;
+  background-color: #030441;
   margin-bottom: 48px;
   padding: 20px 0;
 
@@ -50,17 +50,15 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.logo {
-  width: 200px;
-}
+
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #0b6aa5;
+  color: #1f9eec;
   text-decoration: none;
   user-select: none;
-  border: 1px  #023f64;
+  border: 1px  #0b8cdd;
   border-radius: 3px;
   transition: 0.4s ease;
 }
@@ -73,10 +71,10 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #0b6aa5;
+  color:#1f9eec;
   text-decoration: none;
   user-select: none;
-  border: 1px  #023f64;
+  border: 1px  #0b8cdd64;
   border-radius: 3px;
   transition: 0.4s ease;
 }
@@ -136,10 +134,11 @@ a {
   margin-bottom: 28px;
 }
 .card__wrapper {
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   min-height: calc(100vh - 161px);
 }
 .card {
@@ -165,7 +164,6 @@ a {
   text-align: right;
 }
 
-/* 詳細ページ */
 .aqua__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -181,7 +179,7 @@ a {
   text-align: center;
 }
 .aqua__image{
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   padding: 16px 0;
 }
@@ -218,7 +216,7 @@ a {
 }
 
 .aqua__comments{
-  background-color: #f6f6f6;
+  background-color: #011c22;
   padding: 20px;
   margin: 28px 0 40px 0;
 }
@@ -237,6 +235,25 @@ a {
   color: #999;
 }
 
+.aqua__log{
+  margin-top: 30px;
+}
+
+.logs_lists{
+  display: flex;
+  justify-content: center;
+}
+
+.logs_lists img{
+  height: 150px;
+}
+
+.log__form{
+  background-color: #012438;
+  padding: 20px;
+  margin: 28px 0 40px 0;
+}
+
 .user__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -248,15 +265,15 @@ a {
 .table__col1{
   text-align: left;
   font-weight: bold;
-  background: #fafafa;
+  background: #1e1f63;
   border-collapse: collapse;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #1e1f63;
   width: 30%;
   padding: 8px;
 }
 .table__col2{
   text-align: left;
-  border: 1px solid #f5f5f5;
+  border: 2px solid#1e1f63;
   border-collapse: collapse;
   width: 70%;
   padding: 16px 8px;
@@ -269,8 +286,8 @@ a {
 }
 
 .footer {
-  background-color: #5ea6e6;
-  padding: 10px 0;
+  background-color: #030441;
+  padding: 20px 0;
 }
 
 

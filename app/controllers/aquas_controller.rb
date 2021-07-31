@@ -24,6 +24,8 @@ class AquasController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @aqua.comments.includes(:user)
+    @log = Log.new
+    @logs =@aqua.logs
   end
 
   def edit
