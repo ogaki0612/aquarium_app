@@ -7,6 +7,11 @@
         <%= render 'shared/error_messages', model: f.object %>
 
         <div class="field">
+          <%= f.label :nickname, "ニックネーム" %><br />
+          <%= f.text_field :nickname, id:"user_name" %>
+        </div>
+
+        <div class="field">
           <%= f.label :email, "Eメール" %><br />
           <%= f.email_field :email, id:"user_email", autofocus: true, autocomplete: "email" %>
         </div>
@@ -22,9 +27,9 @@
         </div>
 
         <div class="field">
-          <%= f.label :nickname, "ニックネーム" %><br />
-          <%= f.text_field :nickname, id:"user_name" %>
-        </div>
+          <%= f.label :image, "アイコンの画像" %><br />
+          <%= f.file_field :image, id:"aqua_image" %>
+          </div>
 
         <div class="field">
           <%= f.label :profile, "プロフィール" %><br />

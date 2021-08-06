@@ -6,6 +6,7 @@ class Log < ApplicationRecord
   with_options presence: true do
     validates :image
     validates :title
+    validates :text
   end
   
 end

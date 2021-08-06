@@ -5,9 +5,12 @@ class User < ApplicationRecord
   has_many :aquas
   has_many :comments
 
+  has_one_attached :image
+
   with_options presence: true do
     validates :nickname
     validates :profile
+    validates :image
   end
 
 end

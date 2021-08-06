@@ -22,6 +22,40 @@
           </p>
         </div>
       </div>
+      <div class="aqua__log">
+        <ul class="logs_lists">
+          <% if @logs %>
+            <% @logs.each do |log| %>
+              <li class="logs_list">
+                <%= link_to image_tag(log.image), aqua_log_path(log.id) %>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+      <div class="log__form">
+        <% if user_signed_in? && current_user.id ==@aqua.user_id %>
+          <p>画像を追加する</p>
+          <%= form_with(model: [@aqua,@log], local: true) do |form| %>
+            <div class="field">
+              <%= form.label :title, "タイトル" %><br />
+              <%= form.text_field :title %>
+            </div>
+            <div class="field">
+              <%= form.label :text, "詳細" %><br />
+              <%= form.text_area :text, class: :form__text %>
+            </div>
+            <div class="field">
+              <%= form.label :image, "画像" %><br />
+              <%= form.file_field :image %>
+            </div>
+            <div class="actions">
+              <%= form.submit "追加する", class: :form__btn  %>
+            </div>
+          <% end %> 
+        <% end %>
+      </div>
+
       <div class="aqua__comments">
         <% if user_signed_in? %>
           <%= form_with(model: [@aqua,@comment], local: true) do |form| %>
