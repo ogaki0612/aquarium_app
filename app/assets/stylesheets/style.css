@@ -38,6 +38,7 @@ a {
 .header {
   background-color: #030441;
   margin-bottom: 48px;
+
   padding: 20px 0;
 
 }
@@ -129,6 +130,7 @@ a {
 .greeting__link{
   text-decoration: none;
 }
+
 .page-heading {
   font-size: 30px;
   margin-bottom: 28px;
