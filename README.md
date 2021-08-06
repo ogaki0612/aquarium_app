@@ -48,6 +48,7 @@ Aquaria
 | column        | type       | option            |
 | ------------- |------------| ------------------|
 | title         | string     | null: false       |
+| text          | text       | null: false       |
 | aqua          | references | foreign_key: true |
 
 #### Association

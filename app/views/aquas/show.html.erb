@@ -42,6 +42,10 @@
               <%= form.text_field :title %>
             </div>
             <div class="field">
+              <%= form.label :text, "詳細" %><br />
+              <%= form.text_area :text, class: :form__text %>
+            </div>
+            <div class="field">
               <%= form.label :image, "画像" %><br />
               <%= form.file_field :image %>
             </div>
