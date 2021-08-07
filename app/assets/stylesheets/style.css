@@ -65,7 +65,7 @@ a {
 }
 .nav__btn:hover{
   color: #fff;
-  background: #87CEFA;
+  background: #1f9eec;
 }
 
 .nav__logout{
@@ -81,7 +81,7 @@ a {
 }
 .nav__logout:hover{
   color: #fff;
-  background: #87CEFA;
+  background: #1f9eec;
 }
 
 .nav__left{
@@ -112,7 +112,7 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #0565a0;
+  background:#1f9eec;
   border: 1px #f3f5f7 solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
@@ -127,8 +127,16 @@ a {
 .greeting{
   margin-bottom: 20px;
 }
+
 .greeting__link{
   text-decoration: none;
+}
+
+.greeting img{
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  object-fit: cover;
 }
 
 .page-heading {
@@ -144,12 +152,18 @@ a {
   min-height: calc(100vh - 161px);
 }
 .card {
-  width: calc((100% - 50px) / 3);
   margin-bottom: 40px;
 }
 .card__img {
   margin-bottom: 16px;
+  height: 280px;
+
 }
+
+.card__img img{
+  width: calc(());
+}
+
 .card__title {
   display: block;
   font-size: 20px;
@@ -160,10 +174,7 @@ a {
   font-size: 16px;
 }
 .card__user {
-  display: block;
-  font-size: 12px;
-  color: #999;
-  text-align: right;
+  display: inline;
 }
 
 .aqua__wrapper{
@@ -172,19 +183,33 @@ a {
 .aqua__hedding{
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
-.aqua__user{
+
+.icon__name{
   display: block;
-  font-size: 16px;
-  color: #999;
-  text-align: center;
+  text-align: right;
+  padding-top: 6px;
 }
+
+.icon__name img{
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  object-fit: cover;
+}
+
 .aqua__image{
   width: 100%;
   margin: 0 auto;
   padding: 16px 0;
 }
+
+.aqua__image img{
+  display: block;
+  margin: auto;
+}
+
 .aqua__detail{
   display: flex;
   align-items: center;
@@ -218,7 +243,6 @@ a {
 }
 
 .aqua__comments{
-  background-color: #011c22;
   padding: 20px;
   margin: 28px 0 40px 0;
 }
@@ -255,9 +279,15 @@ a {
 }
 
 .log__form{
-  background-color: #012438;
   padding: 20px;
   margin: 28px 0 40px 0;
+}
+
+.user__icon img{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  object-fit: cover;
 }
 
 .user__wrapper{

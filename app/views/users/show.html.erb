@@ -1,6 +1,9 @@
 <div class="main">
   <div class="inner">
     <div class="user__wrapper">
+      <div class="user__icon">
+        <%= image_tag @user.image %>
+      </div>
       <h2 class="page-heading">
         <%= "#{@user.nickname}さんの情報"%>
       </h2>

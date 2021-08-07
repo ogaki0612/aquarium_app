@@ -2,9 +2,9 @@
   <%= link_to image_tag(aqua.image, class: :card__img ), aqua_path(aqua.id)%>
   <div class="card__body">
     <%= link_to aqua.title, aqua_path(aqua.id), class: :card__title%>
-    <p class="card__summary">
-      <%= aqua.details %>
-    </p>
-    <%= link_to "by #{aqua.user.nickname}", user_path(aqua.user.id), class: :card__user %>
+    <div class="icon__name">
+        <%= link_to image_tag(aqua.user.image), user_path(aqua.user.id), class: :card__user %>
+        <%= link_to "#{aqua.user.nickname}", user_path(aqua.user.id), class: :card__user %>
+    </div>
   </div>
 </div>
