@@ -6,7 +6,7 @@
       </p>
       <div class="icon__name">
         <%= link_to image_tag(@aqua.user.image), user_path(@aqua.user.id) %>
-        <%= link_to "#{@aqua.user.nickname}", user_path(@aqua.user.id) %>
+        <%= link_to "#{@aqua.user.nickname}", user_path(@aqua.user.id), class: :aqua__user %>
       </div>
         <% if user_signed_in? && current_user.id ==@aqua.user_id %>
         <div class="aqua__manage">
@@ -75,8 +75,12 @@
           <% if @comments %>
             <% @comments.each do |comment| %>
               <li class="comments_list">
+                <% if @aqua.user_id == comment.user_id %>
+                  <%= image_tag("sakana_blue.png",class: :sakana__logo) %>
+                <% else %>
+                  <%= link_to image_tag(@aqua.user.image, class: :comment__icon ), user_path(@aqua.user.id) %>
+                <% end %>
                 <%= comment.text %>
-                <%= link_to comment.user.nickname, user_path(comment.user.id), class: :comment_user %>
               </li>
             <% end %>
           <% end %>

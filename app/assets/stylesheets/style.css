@@ -133,9 +133,9 @@ a {
 }
 
 .greeting img{
-  width: 25px;
-  height: 25px;
-  border-radius: 12.5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -193,9 +193,9 @@ a {
 }
 
 .icon__name img{
-  width: 25px;
-  height: 25px;
-  border-radius: 12.5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -244,7 +244,7 @@ a {
 
 .aqua__comments{
   padding: 20px;
-  margin: 28px 0 40px 0;
+  margin: 0 0 40px 0;
 }
 
 .comments_lists{
@@ -252,13 +252,24 @@ a {
 }
 
 .comments_list{
-  list-style-type: square;
   padding-bottom: 5px;
+  display: inline;
 }
 
-.comment_user{
-  font-size: 16px;
-  color: #999;
+.comment__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: inline;
+  margin-right:10px ;
+}
+
+.sakana__logo{
+  width: 24px;
+  height: 24px;
+  display: inline;
+  margin-right:10px ;
 }
 
 .aqua__log{
@@ -280,7 +291,7 @@ a {
 
 .log__form{
   padding: 20px;
-  margin: 28px 0 40px 0;
+  margin-top: 28px ;
 }
 
 .user__icon img{
